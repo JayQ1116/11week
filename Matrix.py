@@ -31,14 +31,29 @@ class Matrix:
         return result
 
 if __name__ == "__main__":
-    A = Matrix(3, 2)
+    A = Matrix(2, 2)
     A.data = [[1, 2],
-              [3, 4],
-              [5, 6]]
+              [3, 4],]
 
-    B = Matrix(2, 3)
-    B.data = [[7, 8, 9],
-              [10, 11, 12]]
+    B = Matrix(2, 2)
+    B.data = [[3,4],
+              [5,6]]
 
-    C = A * B
-    print(C)
+    C = Matrix(3,2)
+    C.data = [[3,4],
+              [5,6],
+              [1,2]]
+    D = Matrix(2,3)
+    D.data = [[3,4,5],
+              [5,6,7]]
+    print(A)
+    print(A+B)
+    print(A*D)
+    try:
+        print(A+C)
+    except Exception as e:
+        print(e)
+    try:
+        print(A*C)
+    except Exception as e:
+        print(e)
