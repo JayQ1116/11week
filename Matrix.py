@@ -30,15 +30,15 @@ class Matrix:
 
         return result
 
-# Example usage
-A = Matrix(3, 2)
-A.data = [[1, 2],
-          [3, 4],
-          [5, 6]]
+if __name__ == "__main__":
+    A = Matrix(3, 2)
+    A.data = [[1, 2],
+              [3, 4],
+              [5, 6]]
 
-B = Matrix(2, 3)
-B.data = [[7, 8, 9],
-          [10, 11, 12]]
+    B = Matrix(2, 3)
+    B.data = [[7, 8, 9],
+              [10, 11, 12]]
 
-C = A * B
-print(C)
+    C = A * B
+    print(C)
